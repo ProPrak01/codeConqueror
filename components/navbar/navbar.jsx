@@ -1,22 +1,31 @@
 import React, { useState } from 'react';
 import {RiMenu3Line, RiCloseLine} from 'react-icons/ri'
 import './navbar.css'
-import logo from "../../assets/logo.svg"
+import logo from "../../assets/icon.svg"
 
 const Menu = () =>(
-  <><p><a style={{ color: 'white' }} href="#home">Home</a></p>
-  <p><a style={{ color: 'white' }} href="#wgpt3">What is GPT3?</a></p>
-  <p><a style={{ color: 'white' }} href="#possibilities">OpenAI</a></p>
-  <p><a style={{ color: 'white' }} href="#features">Case Studies</a></p>
-  <p><a style={{ color: 'white' }} href="#blog">Libraries</a></p></>
+  <>
+  <p className='font_menu'>Home</p>
+  <p className='font_menu'>About Us</p>
+  <p className='font_menu'>Search</p>
+ </>
 )
 const Navbar = () => {
+  const scrollToSection = (sectionId) => {
+    // Prevent the default anchor link behavior
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  };
+
+
   const [toggleMenu,setToggleMenu] = useState(false);
   return (
     <div className='gpt3__navbar'>
       <div className='gpt3__navbar-links'>
         <div className='gpt3__navbar-links_logo'>
-          <img src={logo} alt='logo'/>
+          <img  src={logo} alt='logo'/>
         </div>
         <div className='gpt3__navbar-links_container'>
         < Menu />
@@ -24,8 +33,8 @@ const Navbar = () => {
 
       </div>
       <div className='gpt3__navbar-sign'>
-        <p>Sign In</p>
-        <button type="button">Sign Up</button>
+       
+        <button type="button">Library</button>
       </div>
       <div className='gpt3__navbar-menu'>
       {toggleMenu
@@ -38,8 +47,8 @@ const Navbar = () => {
 
         < Menu />
         <div className='gpt3__navbar-menu_container-links-sign'>
-        <p>Sign In</p>
-        <button type="button">Sign Up</button>
+       
+        <button type="button">Library</button>
       </div>
         </div>
         </div>

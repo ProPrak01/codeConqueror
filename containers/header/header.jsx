@@ -7,6 +7,7 @@ import Spline from '@splinetool/react-spline';
 const header = () => {
   return (
     <div className='gpt3__header section__padding' id="home">
+
       <div className='gpt3__header-content'>
         <h1 className='gradient__text'>One and Only <br/>PhotoPedia</h1>
         <p>Yet bed any for travelling assistance indulgence unpleasing. Not thoughts all exercise blessing. Indulgence way everything joy alteration boisterous the attachment. Party we years to order allow asked of.</p>
@@ -21,7 +22,8 @@ const header = () => {
         
       </div>
       <div className='gpt3__header-image'>
-      <Spline scene="https://prod.spline.design/Fbx4GOCoTeHBEPRQ/scene.splinecode" />
+      <Spline scene="https://prod.spline.design/SVDsscuulnP10g0r/scene.splinecode" />
+
 
           {/* <img src={ai} alt='ai'/> */}
         </div>

@@ -24,6 +24,7 @@ const Home = () => {
                 (
                     <div >
                         <div className="gradient_bg">
+
                             <Header />
                         </div>
 
