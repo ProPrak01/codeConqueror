@@ -1,18 +1,27 @@
 import React from 'react'
 import './App.css'
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import Header from './components/Header/Header'
-import Home from './components/Home/Home'
+import {Article,Brand,CTA,Navbar} from '../components'
+import {Footer, Header,Possibility,WhatGPT3,Features,Blog} from '../containers'
 function App() {
 
 
   return (
-    <Router>
-      <Header />
-      <Routes>
-        <Route path="/" element={<Home />} />
-      </Routes>
-    </Router>
+    <div className='App'>
+    <div className='gradient_bg'>
+      <Navbar/>
+      <Header/>
+
+
+    </div>
+    <Brand/>
+    <WhatGPT3/>
+    <Features/>
+    <Possibility/>
+    <CTA/>
+    <Blog/>
+    <Footer/>
+   
+    </div>
   )
 }
 
