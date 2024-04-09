@@ -1,13 +1,18 @@
 import React from 'react'
 import './App.css'
-
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import Header from './components/Header/Header'
+import Home from './components/Home/Home'
 function App() {
 
 
   return (
-    <>
-      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis inventore quae, dolores fugiat sed iste praesentium accusamus dignissimos minima cum! Soluta esse id blanditiis molestiae consequatur mollitia animi dicta quasi!
-    </>
+    <Router>
+      <Header />
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
+    </Router>
   )
 }
 
