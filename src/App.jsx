@@ -8,10 +8,14 @@ import footer from './../containers/footer/footer';
 import header from './../containers/header/header';
 import features from './../containers/features/features';
 import Home from './Home/Home';
+import ImageInfo from './Pages/ImageInfo/ImageInfo';
 function App() {
+
 
   return (
     <Router>
+
+
       <Navbar />
       <Routes >
         <Route path='/navbar' element={<Navbar />} />
@@ -21,6 +25,7 @@ function App() {
         <Route path='/features' element={<features />} />
         <Route path='/blog' element={<Blog />} />
         <Route path='/footer' element={<footer />} />
+        <Route path="/imageinfo/:albumId/:id" element={<ImageInfo />} />
       </Routes>
       <footer />
     </Router>

@@ -5,6 +5,7 @@ import Brand from './../../components/brand/brand';
 import Loading from './../../components/Loader/Loader.jsx';
 import CTA from '../../components/cta/cta.jsx';
 import Blog from '../../containers/blog/Blog.jsx';
+import ImageInfo from './../Pages/ImageInfo/ImageInfo';
 const Home = () => {
     const [Loader, setLoader] = React.useState(true);
     useEffect(() => {
@@ -28,8 +29,9 @@ const Home = () => {
 
                         <div >
                             <Brand />
-                            <CTA/>
-                            <Blog/>
+                            <ImageInfo />
+                            <CTA />
+                            <Blog />
                         </div>
                     </div>
                 )
