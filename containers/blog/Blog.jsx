@@ -23,11 +23,13 @@ const Blog = (props) => {
   // console.log(data);
   return (
     <div className='Container'>
-      {
-        data ? (
-          data.map((item) => {
-            return (
-              <ul class="cards">
+
+      <ul class="cards">
+        {
+          data ? (
+            data.map((item) => {
+              return (
+
                 <li>
                   <a href="" class="card">
                     <Link to={`/imageinfo/${item.albumId}/${item.id}`} >
@@ -47,13 +49,14 @@ const Blog = (props) => {
                   </a>
                 </li>
 
-              </ul>
-            )
-          })
-        ) : (
-          <Loading />
-        )
-      }
+
+              )
+            })
+          ) : (
+            <Loading />
+          )
+        }
+      </ul>
     </div>
 
   )

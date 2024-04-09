@@ -119,3 +119,14 @@
     -webkit-line-clamp: 3;
     overflow: hidden;
   }    
+
+
+  h1 {
+    font-size: 2em;
+    margin: 0 0 1em;
+    color: #6A515E;
+align-items: center;
+    justify-content: center;
+    display: flex;
+
+  }
