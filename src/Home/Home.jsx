@@ -3,6 +3,8 @@ import '../App.css'
 import Header from './../../containers/header/header';
 import Brand from './../../components/brand/brand';
 import Loading from './../../components/Loader/Loader.jsx';
+import CTA from '../../components/cta/cta.jsx';
+import Blog from '../../containers/blog/Blog.jsx';
 const Home = () => {
     const [Loader, setLoader] = React.useState(true);
     useEffect(() => {
@@ -26,6 +28,8 @@ const Home = () => {
 
                         <div >
                             <Brand />
+                            <CTA/>
+                            <Blog/>
                         </div>
                     </div>
                 )
