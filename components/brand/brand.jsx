@@ -1,6 +1,7 @@
 import React from 'react'
 import './brand.css'
-import {google, slack, atlassian, dropbox, shopify,interiit,iitm} from './imports.js'
+import { webops,interiit,iitm} from './imports.js'
+
 const Brand = () => {
   return (
     <div className='gpt3__brand selection__padding'>
@@ -8,17 +9,12 @@ const Brand = () => {
     <img className='iitm' height={60} width={100} src={iitm} alt="google"/>
     </div>
     <div>
-    <img className='interiit' height={60} width={60} src={interiit} alt="slack"/>
+    <img className='interiit' height={60} width={60} src={interiit} alt="interiit"/>
     </div>
     <div>
-    <img src={atlassian} alt="atlassian"/>
+    <img className='interiit' height={70} width={70} src={webops} alt="weboops"/>
     </div>
-    <div>
-    <img src={dropbox} alt="dropbox"/>
-    </div>
-    <div>
-    <img src={shopify} alt="shopify"/>
-    </div>
+    
     </div>
   )
 }

@@ -6,16 +6,16 @@ import logo from "../../assets/icon.svg"
 const Menu = () =>(
   <>
   <p className='font_menu'>Home</p>
-  <p className='font_menu'>About Us</p>
+  <p onClick={() => scrollToSection("container")} className='font_menu'>About Us</p>
   <p className='font_menu'>Search</p>
  </>
 )
 const Navbar = () => {
-  const scrollToSection = (sectionId) => {
-    // Prevent the default anchor link behavior
-    const section = document.getElementById(sectionId);
+  const scrollToSection = (name) => {
+    const section = document.querySelector(`.${name}`);
     if (section) {
       section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      
     }
   };
 
@@ -28,13 +28,17 @@ const Navbar = () => {
           <img  src={logo} alt='logo'/>
         </div>
         <div className='gpt3__navbar-links_container'>
-        < Menu />
+        <p className='font_menu'>Home</p>
+  <p onClick={() => scrollToSection("container")} className='font_menu'>About Us</p>
+  <p className='font_menu'>Search</p>
+
+        {/* < Menu /> */}
         </div>
 
       </div>
       <div className='gpt3__navbar-sign'>
        
-        <button type="button">Library</button>
+        <button onClick={() => scrollToSection("Container")} type="button">Library</button>
       </div>
       <div className='gpt3__navbar-menu'>
       {toggleMenu
