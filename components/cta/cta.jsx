@@ -30,7 +30,7 @@ const CTA = () => {
           <p>Request Early Access to Get Started</p>
           <h1>Register today & start exploring the endless possibilities.</h1>
         </div>
-        <button onClick={togglePopup}>About Us</button>
+        <button onClick={togglePopup}>More About Us</button>
         {showPopup && <Popup onClose={togglePopup} />}
       </div>
     </div>

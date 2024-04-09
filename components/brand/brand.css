@@ -3,7 +3,8 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-
+    margin-bottom: 3rem;
+    margin-top: 2rem;
 
 }
 .gpt3__brand div{
@@ -18,5 +19,5 @@
 
 }
 .iitm{
-    filter: grayscale();
+    
 }

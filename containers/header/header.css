@@ -13,6 +13,18 @@
     margin-right: 5rem;
 }
 
+@keyframes rainbow {
+    0% {border-color: red;}
+    25% {border-color: orange;}
+    50% {border-color: yellow;}
+    75% {border-color: green;}
+    100% {border-color: blue;}
+  }
+  
+  .rainbow-border {
+    border: 2px solid;
+    animation: rainbow 2s linear infinite;
+  }
 
 .gpt3__header-content h1 {
     font-family: Manrope;
