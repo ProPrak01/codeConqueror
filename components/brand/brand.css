@@ -17,3 +17,6 @@
     align-items: center;
 
 }
+.iitm{
+    filter: grayscale();
+}

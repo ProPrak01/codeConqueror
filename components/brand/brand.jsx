@@ -1,14 +1,14 @@
 import React from 'react'
 import './brand.css'
-import {google, slack, atlassian, dropbox, shopify} from './imports.js'
+import {google, slack, atlassian, dropbox, shopify,interiit,iitm} from './imports.js'
 const Brand = () => {
   return (
     <div className='gpt3__brand selection__padding'>
     <div>
-    <img src={google} alt="google"/>
+    <img className='iitm' height={60} width={100} src={iitm} alt="google"/>
     </div>
     <div>
-    <img src={slack} alt="slack"/>
+    <img className='interiit' height={60} width={60} src={interiit} alt="slack"/>
     </div>
     <div>
     <img src={atlassian} alt="atlassian"/>

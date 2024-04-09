@@ -1,0 +1,47 @@
+.container{
+    position: relative;
+}
+
+.gradient-div {
+    position: absolute;
+      left: 5%;
+    /* transform: translate(0%,-50%); */
+    background: linear-gradient(to right, #7b4397, #dc2430);
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    height: 10rem;
+     /* Adjust as needed */
+    color: white;
+    font-family: Arial, sans-serif;
+  }
+
+  .gradient-div h1 {
+    font-size: 24px; /* Adjust as needed */
+    margin: 0;
+    font-weight: normal;
+  }
+
+  .gradient-div p {
+    margin: 0;
+    font-size: 16px; 
+  }
+
+  .gradient-div button {
+    background-color: #000000;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px; 
+    font-weight: bold;
+    outline: none;
+  }
+
+  .gradient-div button:hover {
+    background-color: #333333; 
+  }

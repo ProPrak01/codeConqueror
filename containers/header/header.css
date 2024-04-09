@@ -15,10 +15,10 @@
 
 .gpt3__header-content h1 {
     font-family: Manrope;
-    font-size: 3.875rem;
+    font-size: 7rem;
     font-style: normal;
     font-weight: 800;
-    line-height: 4.6875rem; /* 120.968% */
+    line-height: 9rem; /* 120.968% */
     letter-spacing: -0.155rem;
     background: linear-gradient(90deg, #AE67FA 1.84%, #F49867 102.67%);
 background-clip: text;
@@ -111,7 +111,12 @@ background-clip: text;
     display: flex;
     justify-content: center;
     align-items: center;
+
+   
 }
+/* .gpt3__header-image Spline{
+
+} */
 
 .gpt3__header-image img {
     width: 100%;
