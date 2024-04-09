@@ -12,8 +12,28 @@
     align-items:center;
 
 }
+.font_menu{
+    color: 'white';
+    cursor : "pointer";
+    margin-left: 2rem;
+    font-weight: bold;
+    
+    padding: 0.3rem 0.5rem;
+    transition: background 3s ease-in-out; /* Add transition here */
+
+
+
+}
+.font_menu:hover{
+    border-radius:25px ;
+    background:  linear-gradient(to right, #7b4397, #dc2430) 
+}
 .gpt3__navbar-links_logo{
 margin-right:2rem;
+margin-top: 1rem;
+filter: invert(1);
+scale: 3;
+max-width: fit-content;
 
 }
 .gpt3__navbar-links_logo img{

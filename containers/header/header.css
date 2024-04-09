@@ -13,6 +13,7 @@
     margin-right: 5rem;
 }
 
+
 .gpt3__header-content h1 {
     font-family: Manrope;
     font-size: 7rem;
@@ -107,11 +108,15 @@ background-clip: text;
 }
 
 .gpt3__header-image {
+    
     flex: 1;
     display: flex;
+
     justify-content: center;
     align-items: center;
-    
+    /* border: 15px solid RGB(220, 199, 164); /* Change as needed */
+
+
    
 }
 /* .gpt3__header-image Spline{

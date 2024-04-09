@@ -12,6 +12,7 @@ function App() {
 
   return (
     <Router>
+    
       <Navbar />
       <Routes >
         <Route path='/navbar' element={<Navbar />} />
