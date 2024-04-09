@@ -1,6 +1,15 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import './Blog.css'
+import Loading from '../../components/Loader/Loader';
 const Blog = () => {
+  const [data, setData] = useState([]);
+  useEffect(() => {
+    fetch('https://jsonplaceholder.typicode.com/photos')
+      .then((response) => response.json())
+      .then((json) => setData(json))
+      .catch(error => console.error('Error:', error));
+  }, [])
+  console.log(data);
   return (
 <div className='Container'>
 <ul class="cards">
